@@ -1,0 +1,50 @@
+---
+title: dotnet-htronic-dbtemplate
+description: dotnet library template for use with dapper
+head:
+  - tag: title
+    content: dotnet-htronic-dbtemplate
+template: splash
+editUrl: false
+hero:
+  tagline: dotnet library template for use with dapper
+  actions:
+    - text: Overview
+      link: /dotnet-htronic-dbtemplate/overview/
+    - text: API
+      link: /dotnet-htronic-dbtemplate/api/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components'
+
+## Next steps
+
+<CardGrid stagger>
+  <Card title="Install the template" icon="puzzle">
+    ```bash
+    # 1. Clone the repo that contains the template
+    git clone https://github.com/htronic-templates/dotnet-htronic-dbtemplate.git
+    # 2. Install the template from the local folder
+    dotnet new install ./dotnet-htronic-dbtemplate/src/Libs
+    ```
+  </Card>
+  <Card title="Create a new project" icon="setting">
+    ```bash
+    # 1. To list installed templates
+    dotnet new list Htronic.DBTemplate
+    # 2. To create a new instance from the template
+    dotnet new htronic.data.mssql -n Myplatform.DB
+    ```
+  </Card>
+  <Card title="Quick Example" icon="open-book">
+    ```cs
+    // Get a connection 
+    var db = DBId.Example_Remote_SQL.GetConnection();
+    // Run a query that returns a datatable
+    var dt = conn.QueryDataTable("SELECT * FROM TestTable1");
+    // Do something with the datatable
+    dataGridView1.DataSource = dt;  
+    ```
+  </Card>
+</CardGrid>

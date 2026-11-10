@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['dapperextensions_0',['DapperExtensions',['../class_d_b_template_1_1_data_1_1_ms_sql_1_1_extensions_1_1_dapper_extensions.html',1,'DBTemplate.Data.MsSql.Extensions.DapperExtensions'],['../class_d_b_template_1_1_data_1_1_my_sql_1_1_extensions_1_1_dapper_extensions.html',1,'DBTemplate.Data.MySql.Extensions.DapperExtensions'],['../class_d_b_template_1_1_data_1_1_pg_sql_1_1_extensions_1_1_dapper_extensions.html',1,'DBTemplate.Data.PgSql.Extensions.DapperExtensions'],['../class_d_b_template_1_1_data_1_1_sqlite_1_1_extensions_1_1_dapper_extensions.html',1,'DBTemplate.Data.Sqlite.Extensions.DapperExtensions']]],
+  ['dbidentextensions_1',['DBIdentExtensions',['../class_d_b_template_1_1_data_1_1_ms_sql_1_1_d_b_ident_extensions.html',1,'DBTemplate.Data.MsSql.DBIdentExtensions'],['../class_d_b_template_1_1_data_1_1_my_sql_1_1_d_b_ident_extensions.html',1,'DBTemplate.Data.MySql.DBIdentExtensions'],['../class_d_b_template_1_1_data_1_1_pg_sql_1_1_d_b_ident_extensions.html',1,'DBTemplate.Data.PgSql.DBIdentExtensions'],['../class_d_b_template_1_1_data_1_1_sqlite_1_1_d_b_ident_extensions.html',1,'DBTemplate.Data.Sqlite.DBIdentExtensions']]]
+];

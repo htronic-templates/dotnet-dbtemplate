@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Examples/">
+    <Project Path="Examples/Example.MsSql/Example.MsSql.csproj" Id="57cafd9b-1291-4f6f-b9ce-de3ef98e6d28" />
+    <Project Path="Examples/Example.MySql/Example.MySql.csproj" />
+    <Project Path="Examples/Example.PgSql/Example.PgSql.csproj" />
+    <Project Path="Examples/Example.Sqlite/Example.Sqlite.csproj" />
+  </Folder>
+  <Folder Name="/Libs/">
+    <Project Path="Libs/DBTemplate.Data.MsSql/DBTemplate.Data.MsSql.csproj" />
+    <Project Path="Libs/DBTemplate.Data.MySql/DBTemplate.Data.MySql.csproj" />
+    <Project Path="Libs/DBTemplate.Data.PgSql/DBTemplate.Data.PgSql.csproj" />
+    <Project Path="Libs/DBTemplate.Data.Sqlite/DBTemplate.Data.Sqlite.csproj" />
+  </Folder>
+</Solution>

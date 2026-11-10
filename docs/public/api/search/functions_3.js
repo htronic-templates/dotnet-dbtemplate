@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['withconnection_3c_20tresult_20_3e_0',['WithConnection&lt; TResult &gt;',['../class_d_b_template_1_1_data_1_1_ms_sql_1_1_d_b_ident_extensions.html#aaf76f9d82d52cb39cbb62a8ff4cc4982',1,'DBTemplate.Data.MsSql.DBIdentExtensions.WithConnection&lt; TResult &gt;()'],['../class_d_b_template_1_1_data_1_1_my_sql_1_1_d_b_ident_extensions.html#ade136a54bacf9bc0ac27deb063422757',1,'DBTemplate.Data.MySql.DBIdentExtensions.WithConnection&lt; TResult &gt;()'],['../class_d_b_template_1_1_data_1_1_pg_sql_1_1_d_b_ident_extensions.html#afa3f6bd596fc7a8f0e1928687f3c20a9',1,'DBTemplate.Data.PgSql.DBIdentExtensions.WithConnection&lt; TResult &gt;()'],['../class_d_b_template_1_1_data_1_1_sqlite_1_1_d_b_ident_extensions.html#a9c3e936490488f4abdf34b9c6ee725ff',1,'DBTemplate.Data.Sqlite.DBIdentExtensions.WithConnection&lt; TResult &gt;()']]]
+];

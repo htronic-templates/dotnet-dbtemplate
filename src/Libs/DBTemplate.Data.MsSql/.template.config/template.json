@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Hecatron",
+  "classifications": ["Database", "Library", "Data", "C#"],
+
+  // Unique identifier for the template
+  "identity": "Htronic.DBTemplate.MsSql",
+
+  // Displayed by dotnet new list
+  "name": "Htronic.DBTemplate.MsSql",
+
+  // Used with dotnet new
+  "shortName": "htronic.data.mssql",
+
+  // Namespace / csproj name to replace
+  "sourceName": "DBTemplate.Data.MsSql",
+
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
