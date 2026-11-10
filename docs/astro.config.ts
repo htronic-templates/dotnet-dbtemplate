@@ -18,7 +18,7 @@ export default defineConfig({
         light: './src/assets/logo-light.svg',
         alt: 'Template Docs Page',
       },
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-template/dotnet-htronic-dbtemplate' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-templates/dotnet-htronic-dbtemplate' }],
       customCss: [
         './src/styles/themes/theme-deep-purple.css',
       ],
