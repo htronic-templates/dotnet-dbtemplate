@@ -8,6 +8,7 @@ It's a small wrapper on top of the Dapper CSharp Library
   * Use Enum's as a lookup for connection strings
   * Extension method for returning a DataTable
   * Extension method for checking if a table exists
+  * https://htronic-templates.github.io/dotnet-htronic-dbtemplate
 
 To give a quick example
 ```cs
