@@ -8,22 +8,22 @@ import { generateSidebarGroups } from './src/sidebar_grps.mjs';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://htronic-templates.github.io/dotnet-htronic-dbtemplate/',
-  base: '/dotnet-htronic-dbtemplate',
+  site: 'https://htronic-templates.github.io/dotnet-dbtemplate/',
+  base: '/dotnet-dbtemplate',
   integrations: [
     starlight({
-      title: 'dotnet-htronic-dbtemplate',
+      title: 'dotnet-dbtemplate',
        logo: {
         dark: './src/assets/logo-dark.svg',
         light: './src/assets/logo-light.svg',
         alt: 'Template Docs Page',
       },
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-templates/dotnet-htronic-dbtemplate' }],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/htronic-templates/dotnet-dbtemplate' }],
       customCss: [
         './src/styles/themes/theme-deep-purple.css',
       ],
       editLink: {
-        baseUrl: 'https://github.com/htronic-templates/dotnet-htronic-dbtemplate/edit/master/docs/',
+        baseUrl: 'https://github.com/htronic-templates/dotnet-dbtemplate/edit/master/docs/',
       },
       plugins: [
         starlightThemeBlack({

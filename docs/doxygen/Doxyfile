@@ -10,7 +10,7 @@
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "dotnet-htronic-dbtemplate"
+PROJECT_NAME           = "dotnet-dbtemplate"
 
 # Set the OPTIMIZE_OUTPUT_JAVA tag to YES if your project consists of Java or
 # Python sources only. Doxygen will then generate output that is more tailored

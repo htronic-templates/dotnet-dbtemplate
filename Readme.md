@@ -1,4 +1,4 @@
-# dotnet-htronic-dbtemplate
+# dotnet-dbtemplate
 
 ## Overview
 
@@ -8,7 +8,7 @@ It's a small wrapper on top of the Dapper CSharp Library
   * Use Enum's as a lookup for connection strings
   * Extension method for returning a DataTable
   * Extension method for checking if a table exists
-  * https://htronic-templates.github.io/dotnet-htronic-dbtemplate
+  * https://htronic-templates.github.io/dotnet-dbtemplate
 
 To give a quick example
 ```cs
@@ -25,9 +25,9 @@ dataGridView1.DataSource = dt;
 To install
 ```bash
 # 1. Clone the repo that contains the template
-git clone https://github.com/htronic-templates/dotnet-htronic-dbtemplate.git
+git clone https://github.com/htronic-templates/dotnet-dbtemplate.git
 # 2. Install the template from the local folder
-dotnet new install ./dotnet-htronic-dbtemplate/src/Libs
+dotnet new install ./dotnet-dbtemplate/src/Libs
 ```
 
 ## Usage
