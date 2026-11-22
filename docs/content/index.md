@@ -22,7 +22,7 @@ icon: lucide/rocket
     dotnet new htronic.data.mssql -n Myplatform.DB
     ```
 
-!!! tip "Create a new project"
+!!! tip "Quick Example"
 
     ```cs
     // Get a connection 
