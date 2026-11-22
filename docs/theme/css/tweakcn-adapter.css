@@ -1,0 +1,486 @@
+
+/*
+ * Zensical / shadcn / tweakcn adapter
+ *
+ * Requirements:
+ *   1. Load the shadcn theme before this file.
+ *   2. Define light variables in :root.
+ *   3. Define dark variables in:
+ *
+ *      .dark,
+ *      body[data-md-color-scheme="slate"]
+ *
+ * Zensical sets data-md-color-scheme on <body>.
+ *
+ * No JavaScript required.
+ */
+
+/* ==========================================
+   1. Zensical semantic colour mappings
+   ========================================== */
+
+body {
+  /* Primary */
+  --md-primary-fg-color: var(--primary);
+  --md-primary-fg-color--light: var(--primary);
+  --md-primary-fg-color--dark: var(--primary);
+  --md-primary-bg-color: var(--primary-foreground);
+  --md-primary-bg-color--light: var(--primary-foreground);
+
+  /* Accent */
+  --md-accent-fg-color: var(--sidebar-accent-foreground);
+  --md-accent-fg-color--transparent:
+    color-mix(in srgb, var(--primary) 12%, transparent);
+  --md-accent-bg-color: var(--accent);
+  --md-accent-bg-color--light: var(--accent);
+
+  /* Page */
+  --md-default-bg-color: var(--background);
+  --md-default-fg-color: var(--foreground);
+  --md-default-fg-color--light:
+    color-mix(in oklch, var(--foreground) 75%, var(--background));
+  --md-default-fg-color--lighter: var(--muted-foreground);
+  --md-default-fg-color--lightest:
+    color-mix(in oklch, var(--foreground) 25%, var(--background));
+
+  /* Code */
+  --md-code-bg-color: var(--card);
+  --md-code-fg-color: var(--card-foreground);
+  --md-code-hl-color: var(--sidebar-accent);
+
+  /* Typography */
+  --md-text-font: var(--font-sans);
+  --md-code-font: var(--font-mono);
+  --md-text-font-family: var(--font-sans);
+
+  /* Tables */
+  --md-typeset-table-color: var(--border);
+  --md-typeset-table-color--light: var(--border);
+
+  /* Footer */
+  --md-footer-bg-color: var(--sidebar);
+  --md-footer-bg-color--dark: var(--card);
+  --md-footer-fg-color: var(--sidebar-foreground);
+  --md-footer-fg-color--light: var(--muted-foreground);
+  --md-footer-fg-color--lighter: var(--muted-foreground);
+
+  /* Shadows */
+  --md-shadow-z1: var(--shadow-sm);
+  --md-shadow-z2: var(--shadow-md);
+  --md-shadow-z3: var(--shadow-lg);
+
+  /* Mermaid diagrams */
+  --md-mermaid-node-bg-color: var(--card);
+  --md-mermaid-node-fg-color: var(--border);
+  --md-mermaid-edge-color: var(--muted-foreground);
+  --md-mermaid-label-bg-color: var(--background);
+  --md-mermaid-label-fg-color: var(--foreground);
+  --md-mermaid-font-family: var(--font-sans);
+}
+
+/* ==========================================
+   2. Global typography and backgrounds
+   ========================================== */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.md-main,
+.md-container {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.md-typeset {
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: var(--tracking-normal, normal);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+
+/* ==========================================
+   3. Header - primary colour
+   ========================================== */
+
+.md-header {
+  background: linear-gradient(
+    120deg,
+    oklch(from var(--primary) 0.6 c h) 0%,
+    oklch(from var(--primary) 1 c h) 100%
+  );
+}
+
+body[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(
+    120deg,
+    oklch(from var(--primary) 0.10 c h) 0%,
+    oklch(from var(--primary) 0.50 c h) 100%
+  );
+}
+
+/* Title and header controls */
+.md-header__title,
+.md-header__button,
+.md-header__button svg,
+.md-header .md-source {
+  color: var(--sidebar-foreground);
+}
+
+/* Header icons on hover */
+.md-header__button:hover {
+  color: var(--primary-foreground);
+  background-color:
+    color-mix(in srgb, var(--primary-foreground) 12%, transparent);
+  border-radius: var(--radius);
+}
+
+/* Repository information */
+.md-header .md-source:hover {
+  color: var(--primary-foreground);
+  opacity: 0.85;
+}
+
+
+/* ==========================================
+   4. Navigation tabs
+   ========================================== */
+
+.md-tabs {
+  background-color: var(--sidebar);
+  color: var(--sidebar-foreground);
+  border-bottom: 1px solid var(--sidebar-border);
+}
+
+.md-tabs__link {
+  color: var(--sidebar-foreground);
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: var(--sidebar-accent-foreground);
+}
+
+/* ==========================================
+   5. Sidebar navigation
+   ========================================== */
+
+.md-sidebar {
+  color: var(--sidebar-foreground);
+}
+
+.md-sidebar__scrollwrap {
+  background-color: var(--sidebar);
+  border-radius: calc(var(--radius) * 0.5);
+}
+
+.md-nav__title {
+  color: var(--sidebar-foreground);
+}
+
+.md-nav__link {
+  color: var(--sidebar-foreground);
+  border-radius: calc(var(--radius) * 0.35);
+}
+
+.md-nav__link:hover {
+  color: var(--sidebar-accent-foreground);
+  background-color: var(--sidebar-accent);
+}
+
+.md-nav__link--active {
+  color: var(--sidebar-accent-foreground);
+  font-weight: 600;
+}
+
+/* ==========================================
+   6. Content links
+   ========================================== */
+
+.md-typeset a:not(.md-button) {
+  color: var(--primary);
+  text-decoration-color: var(--primary);
+}
+
+.md-typeset a:not(.md-button):hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ==========================================
+   7. Cards
+   ========================================== */
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  border-color: var(--ring);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================
+   8. Inline code
+   ========================================== */
+
+.md-typeset :not(pre) > code {
+  background-color: var(--muted);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 0.25);
+  font-family: var(--font-mono);
+}
+
+/* ==========================================
+   9. Code blocks
+   ========================================== */
+
+.md-typeset pre,
+.md-typeset pre > code {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  font-family: var(--font-mono);
+}
+
+.md-typeset .highlight {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 0.5);
+  overflow: hidden;
+}
+
+.md-typeset .highlight pre {
+  margin: 0;
+}
+
+.md-typeset .highlight > .filename {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+.highlight span.filename {
+  margin-top: 0;
+}
+
+/* Code block content */
+.md-typeset .md-code__content {
+  background-color: var(--card);
+  color: var(--card-foreground);
+}
+
+/* Code block toolbar */
+.md-typeset .md-code__nav {
+  color: var(--muted-foreground);
+}
+
+/* Copy and selection buttons */
+.md-typeset .md-code__button {
+  color: var(--muted-foreground);
+  border-radius: calc(var(--radius) * 0.25);
+}
+
+.md-typeset .md-code__button:hover {
+  color: var(--foreground);
+  background-color: var(--muted);
+}
+
+/* ==========================================
+   10. Tables
+   ========================================== */
+
+.md-typeset table:not([class]) {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 0.5);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--border);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--muted);
+}
+
+/* ==========================================
+   11. Search
+   ========================================== */
+
+.md-search__form {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--input);
+  border-radius: calc(var(--radius) * 0.5);
+  box-shadow: var(--shadow-xs);
+}
+
+.md-search__input {
+  color: var(--card-foreground);
+}
+
+.md-search__input::placeholder {
+  color: var(--muted-foreground);
+}
+
+.md-search__output {
+  background-color: var(--popover);
+  color: var(--popover-foreground);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 0.5);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ==========================================
+   12. Buttons
+   ========================================== */
+
+.md-typeset .md-button {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.md-typeset .md-button:hover {
+  background-color: var(--sidebar-accent);
+  color: var(--sidebar-accent-foreground);
+  border-color: var(--ring);
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-color: var(--primary);
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: var(--shadow-md);
+  filter: brightness(0.97);
+}
+
+/* ==========================================
+   13. Admonitions and details
+   ========================================== */
+
+.md-typeset .admonition,
+.md-typeset details {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: calc(var(--radius) * 0.5);
+  box-shadow: var(--shadow-xs);
+}
+
+/*
+ * Keep Zensical's semantic admonition
+ * colours and icons.
+ */
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  border-radius:
+    calc(var(--radius) * 0.5)
+    calc(var(--radius) * 0.5)
+    0 0;
+}
+
+/* ==========================================
+   14. Content tabs
+   ========================================== */
+
+.md-typeset .tabbed-labels {
+  border-bottom: 1px solid var(--border);
+}
+
+.md-typeset .tabbed-labels > label {
+  color: var(--muted-foreground);
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: var(--sidebar-accent-foreground);
+}
+
+/* ==========================================
+   15. Footer
+   ========================================== */
+
+.md-footer {
+  background-color: var(--sidebar);
+  color: var(--sidebar-foreground);
+  border-top: 1px solid var(--sidebar-border);
+}
+
+.md-footer-meta {
+  background-color: var(--card);
+  color: var(--muted-foreground);
+}
+
+.md-footer__link {
+  color: var(--sidebar-foreground);
+}
+
+.md-footer__link:hover {
+  color: var(--sidebar-accent-foreground);
+}
+
+/* ==========================================
+   16. Focus and selection
+   ========================================== */
+
+::selection {
+  background-color: var(--sidebar-accent);
+  color: var(--sidebar-accent-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   17. Reduced motion
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .md-button,
+  .md-typeset .grid.cards > ul > li,
+  .md-typeset .grid.cards > ol > li {
+    transition: none;
+  }
+}

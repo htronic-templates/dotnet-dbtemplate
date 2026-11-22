@@ -26,7 +26,7 @@ OPTIMIZE_OUTPUT_JAVA   = NO
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = ../../src/Libs
+INPUT                  = ../../src
 
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
@@ -45,7 +45,7 @@ GENERATE_LATEX         = NO
 # The default directory is: html.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_OUTPUT            = ../public/api
+HTML_OUTPUT            = ../content/api
 
 # If you set the HAVE_DOT tag to YES then Doxygen will assume the dot tool is
 # available from the path. This tool is part of Graphviz (see:

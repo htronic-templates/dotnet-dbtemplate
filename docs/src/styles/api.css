@@ -1,4 +1,0 @@
-/* Styles for the API Iframe */
-div.main-pane {
-  max-width: calc(var(--spacing) * 600);
-}
