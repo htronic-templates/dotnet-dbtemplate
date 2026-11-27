@@ -1,4 +1,4 @@
-# dotnet-dbtemplate
+# dotnet-tpl-database
 
 ## Overview
 
@@ -8,7 +8,7 @@ It's a small wrapper on top of the Dapper CSharp Library
   * Use Enum's as a lookup for connection strings
   * Extension method for returning a DataTable
   * Extension method for checking if a table exists
-  * https://htronic-templates.github.io/dotnet-dbtemplate
+  * https://htronic-templates.github.io/dotnet-tpl-database
 
 To give a quick example
 ```cs
@@ -17,7 +17,7 @@ var db = DBId.Example_Remote_SQL.GetConnection();
 // Run a query that returns a datatable
 var dt = conn.QueryDataTable("SELECT * FROM TestTable1");
 // Do something with the datatable
-dataGridView1.DataSource = dt;  
+dataGridView1.DataSource = dt;
 ```
 
 ## Install
@@ -25,9 +25,9 @@ dataGridView1.DataSource = dt;
 To install
 ```bash
 # 1. Clone the repo that contains the template
-git clone https://github.com/htronic-templates/dotnet-dbtemplate.git
+git clone https://github.com/htronic-templates/dotnet-tpl-database.git
 # 2. Install the template from the local folder
-dotnet new install ./dotnet-dbtemplate/src/Libs
+dotnet new install ./dotnet-tpl-database/src/Libs
 ```
 
 ## Usage

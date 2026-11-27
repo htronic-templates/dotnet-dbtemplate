@@ -8,9 +8,9 @@ icon: lucide/rocket
 
     ```bash
     # 1. Clone the repo that contains the template
-    git clone https://github.com/htronic-templates/dotnet-dbtemplate.git
+    git clone https://github.com/htronic-templates/dotnet-tpl-database.git
     # 2. Install the template from the local folder
-    dotnet new install ./dotnet-dbtemplate/src/Libs
+    dotnet new install ./dotnet-tpl-database/src/Libs
     ```
 
 !!! abstract "Create a new project"

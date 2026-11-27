@@ -24,11 +24,11 @@
 */
 var NAVTREE =
 [
-  [ "dotnet-dbtemplate", "index.html", [
-    [ "Readme", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-dbtemplate_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html", [
-      [ "Docker Compose Image", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-dbtemplate_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html#autotoc_md6", null ],
-      [ "Bringing the docker container up", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-dbtemplate_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html#autotoc_md7", null ],
-      [ "Create Test Table", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-dbtemplate_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html#autotoc_md8", null ]
+  [ "dotnet-tpl-database", "index.html", [
+    [ "Readme", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-tpl-database_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html", [
+      [ "Docker Compose Image", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-tpl-database_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html#autotoc_md6", null ],
+      [ "Bringing the docker container up", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-tpl-database_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html#autotoc_md7", null ],
+      [ "Create Test Table", "md__d_1_2_source_code_2_public_2htronic-templates_2dotnet-tpl-database_2src_2_examples_2_example_8_my_sql_2_readme_8_maria_db.html#autotoc_md8", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

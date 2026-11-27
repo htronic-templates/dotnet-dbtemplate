@@ -1,13 +1,13 @@
 [project]
-site_url = "https://www.example.com/"
-site_name = "dotnet-dbtemplate"
+site_url = "https://htronic-templates.github.io/dotnet-tpl-database"
+site_name = "dotnet-tpl-database"
 site_description = "Dotnet Dapper DB template"
 site_author = "Hecatronic"
 
 copyright = "Copyright &copy; 2026 Hecatronic"
 
-repo_url = "https://github.com/htronic-templates/dotnet-dbtemplate"
-repo_name = "htronic-templates/dotnet-dbtemplate"
+repo_url = "https://github.com/htronic-templates/dotnet-tpl-database"
+repo_name = "htronic-templates/dotnet-tpl-database"
 edit_uri = "edit/main/docs/"
 
 docs_dir = "content"
